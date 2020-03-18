@@ -121,7 +121,7 @@ const NewItemModal = ({ state }) => {
               margin="normal"
               variant="outlined"
             >
-              <MenuItem value={"clothing"}>Clothing</MenuItem>
+              <MenuItem value={"clothing"} data-cy="category">Clothing</MenuItem>
               <MenuItem value={"camera"}>Camera</MenuItem>
               <MenuItem value={"school_supplies"}>School Supplies</MenuItem>
               <MenuItem value={"bike"}>Bike</MenuItem>

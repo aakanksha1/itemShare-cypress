@@ -8,9 +8,9 @@ describe("Test App", () => {
     cy.get("[data-cy=item]").should("contain", "Post-It Notes");
   });
 
-  // it("successfully renders login page", () => {
-  //   cy.visit("/");
-  //   cy.get("[data-cy=login]").click();
-  //   cy.get("[data-cy=loginbutton]").should("contain", "Login");
-  // });
+  it("successfully renders login page", () => {
+    cy.visit("/");
+    cy.get("[data-cy=login]").click();
+    cy.get("[data-cy=loginbutton]").should("contain", "Login");
+  });
 });

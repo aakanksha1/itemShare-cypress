@@ -42,6 +42,7 @@ const Banner = () => {
                   variant="contained"
                   color="primary"
                   className="login"
+                  data-cy="login"
                 >
                   Login
                 </Button>
