@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {  useHistory } from "react-router-dom";
+import { Link,  useHistory } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -50,7 +50,6 @@ const Search = ({ searchQuery }) => {
               value={currTerm}
               onChange={changeCurrTerm}
               onKeyDown={handleEnter}
-              inputProps={{ "data-testid": "search-input" }}
             />
             <Link to={searchTerm}>
               <IconButton className="iconButton" aria-label="search"></IconButton>
