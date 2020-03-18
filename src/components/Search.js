@@ -50,6 +50,7 @@ const Search = ({ searchQuery }) => {
               value={currTerm}
               onChange={changeCurrTerm}
               onKeyDown={handleEnter}
+              inputProps={{ "data-testid": "search-input" }}
             />
             <Link to={searchTerm}>
               <IconButton className="iconButton" aria-label="search"></IconButton>
